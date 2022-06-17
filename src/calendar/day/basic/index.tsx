@@ -163,8 +163,8 @@ const BasicDay = (props: BasicDayProps) => {
   const renderContent = () => {
     return (
       <Fragment>
-        {renderText()}
         {renderMarking()}
+        {renderText()}
       </Fragment>
     );
   };
