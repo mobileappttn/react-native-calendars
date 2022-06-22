@@ -39,11 +39,11 @@ export default function styleConstructor(theme: Theme = {}) {
       color: appStyle.todayTextColor
     },
     selectedText: {
-      color: "#000",
+      color: '#333333',
       fontWeight: '500',
       textDecorationLine: "underline",
       textDecorationStyle: "solid",
-      textDecorationColor: "#000",
+      textDecorationColor: '#333333',
     },
     disabledText: {
       color: appStyle.textDisabledColor
