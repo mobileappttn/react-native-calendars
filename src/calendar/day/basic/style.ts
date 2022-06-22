@@ -28,8 +28,8 @@ export default function styleConstructor(theme: Theme = {}) {
       marginTop: constants.isAndroid ? 4 : 6
     },
     selected: {
-      backgroundColor: appStyle.selectedDayBackgroundColor,
-      borderRadius: 16
+//       backgroundColor: appStyle.selectedDayBackgroundColor,
+//       borderRadius: 16
     },
     today: {
       backgroundColor: appStyle.todayBackgroundColor,
@@ -39,7 +39,11 @@ export default function styleConstructor(theme: Theme = {}) {
       color: appStyle.todayTextColor
     },
     selectedText: {
-      color: appStyle.selectedDayTextColor
+      color: "#000",
+      fontWeight: '500',
+      textDecorationLine: "underline",
+      textDecorationStyle: "solid",
+      textDecorationColor: "#000",
     },
     disabledText: {
       color: appStyle.textDisabledColor
