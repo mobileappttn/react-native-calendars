@@ -54,6 +54,7 @@ const BasicDay = (props: BasicDayProps) => {
   const style = useRef(styleConstructor(theme));
   const _marking = marking || {};
   const isSelected = _marking.selected || state === 'selected';
+  const isUnderlined = _marking.isUnderline || false;
   const isDisabled = typeof _marking.disabled !== 'undefined' ? _marking.disabled : state === 'disabled';
   const isInactive = _marking?.inactive;
   const isToday = state === 'today';
