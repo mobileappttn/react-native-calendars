@@ -110,6 +110,9 @@ const BasicDay = (props: BasicDayProps) => {
       if (selectedTextColor) {
         styles.push({color: selectedTextColor});
       }
+      if(isUnderlined) {
+        styles.push(style.current.underlineStyle)
+      }
     } else if (isDisabled) {
       styles.push(style.current.disabledText);
     } else if (isToday) {
