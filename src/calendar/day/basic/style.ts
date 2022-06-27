@@ -41,6 +41,8 @@ export default function styleConstructor(theme: Theme = {}) {
     selectedText: {
       color: '#333333',
       fontWeight: constants.isAndroid ? 'bold': '500',
+    },
+    underlineStyle: {
       textDecorationLine: "underline",
       textDecorationStyle: "solid",
       textDecorationColor: '#333333',
