@@ -29,8 +29,14 @@ This project is compatible with Expo/CRNA (without ejecting), and the examples h
 
 ## Installation
 
+Using NPM:
 ```
 $ npm install --save react-native-calendars
+```
+
+Using Yarn:
+```
+$ yarn add react-native-calendars
 ```
 
 The solution is implemented in JavaScript so no native module linking is required.
@@ -556,6 +562,10 @@ An advanced `Agenda` component that can display interactive listings for calenda
   // Specify how agenda knob should look like
   renderKnob={() => {
     return <View />;
+  }}
+  // Override inner list with a custom implemented component
+  renderList={listProps => {
+    return <MyCustomList {...listProps} />;
   }}
   // Specify what should be rendered instead of ActivityIndicator
   renderEmptyData={() => {
